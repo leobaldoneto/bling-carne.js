@@ -1,0 +1,41 @@
+{
+  "name": "bling-carne.js",
+  "version": "0.1.0",
+  "description": "Simples aplicação que gera um carnê a partir de um pedido no Bling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leobaldoneto/bling-carne.js.git"
+  },
+  "keywords": [
+    "bling",
+    "erp",
+    "carne",
+    "script",
+    "node",
+    "javascript",
+    "exe"
+  ],
+  "author": "Leobaldo Alcantara Neto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leobaldoneto/bling-carne.js/issues"
+  },
+  "homepage": "https://github.com/leobaldoneto/bling-carne.js#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "bling-erp.js": "^0.1.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "config.json"
+    ]
+  }
+}
