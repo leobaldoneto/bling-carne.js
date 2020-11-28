@@ -73,8 +73,10 @@ const openBrowser = (tempHtmlFile) => {
 
 const openPromissories = ( paymentsArray ) => {
   for ( parcela of paymentsArray ) {
-    let idParcela = parcela.parcela.idLancamento;
-    openBrowser (`https://www.bling.com.br/b/conta.gerar.titulo.credito.php?id=${idParcela}&tipo=notapromissoria`);
+    if ( parcela.parcela.forma_pagamento.descricao == 'Carnê') {
+      let idParcela = parcela.parcela.idLancamento;
+      openBrowser (`https://www.bling.com.br/b/conta.gerar.titulo.credito.php?id=${idParcela}&tipo=notapromissoria`);
+    }
   }
 }
 
