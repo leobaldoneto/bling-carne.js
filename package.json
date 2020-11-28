@@ -1,11 +1,11 @@
 {
   "name": "bling-carne.js",
   "version": "0.1.0",
-  "description": "Simples aplicação que gera um carnê a partir de um pedido no Bling",
-  "main": "index.js",
+  "description": "Simples aplicação que gera um carnê e promissórias a partir de um pedido no Bling",
+  "main": "gerador.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node gerador.js",
+    "dev": "nodemon gerador.js"
   },
   "repository": {
     "type": "git",
